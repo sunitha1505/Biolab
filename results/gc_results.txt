@@ -1,0 +1,20 @@
+sequence_ID: >gene1
+Length: 16
+GC Content: 50.0%
+---
+sequence_ID: >gene2
+Length: 16
+GC Content: 50.0%
+---
+sequence_ID: >gene3
+Length: 16
+GC Content: 31.25%
+---
+sequence_ID: >gene4
+Length: 16
+GC Content: 100.0%
+---
+sequence_ID: >gene5
+Length: 16
+GC Content: 50.0%
+---
