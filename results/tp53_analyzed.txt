@@ -1,0 +1,4 @@
+ID: >NM_000546.6 Homo sapiens tumor protein p53 (TP53), transcript variant 1, mRNA
+Length: 2512
+GC Content: 53.38%
+---
