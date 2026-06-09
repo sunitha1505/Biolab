@@ -1,5 +1,5 @@
-input_file = open("data/sequences.fasta", "r")
-output_file = open("results/sequence_parsed.txt", "w")
+input_file = open("data/tp53.fasta", "r")
+output_file = open("results/tp53_parsed.txt", "w")
 
 current_id = ""
 current_seq = ""
