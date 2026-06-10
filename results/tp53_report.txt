@@ -1,0 +1,15 @@
+============================================================
+SEQUENCE ANALYSIS REPORT
+============================================================
+
+ID: >NM_000546.6 Homo sapiens tumor protein p53 (TP53), transcript variant 1, mRNA
+Length: 2512 bp
+GC Content: 53.38%
+AT Content: 46.62%
+----------------------------------------
+
+SUMMARY
+============================================================
+Total sequences analyzed: 1
+Highest GC: >NM_000546.6 Homo sapiens tumor protein p53 (TP53), transcript variant 1, mRNA (53.38%)
+Lowest GC:  >NM_000546.6 Homo sapiens tumor protein p53 (TP53), transcript variant 1, mRNA (53.38%)

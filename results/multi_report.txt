@@ -1,0 +1,35 @@
+============================================================
+SEQUENCE ANALYSIS REPORT
+============================================================
+
+ID: >gene1
+Length: 16 bp
+GC Content: 50.0%
+AT Content: 50.0%
+----------------------------------------
+ID: >gene2
+Length: 16 bp
+GC Content: 50.0%
+AT Content: 50.0%
+----------------------------------------
+ID: >gene3
+Length: 16 bp
+GC Content: 31.25%
+AT Content: 68.75%
+----------------------------------------
+ID: >gene4
+Length: 16 bp
+GC Content: 100.0%
+AT Content: 0.0%
+----------------------------------------
+ID: >gene5
+Length: 16 bp
+GC Content: 50.0%
+AT Content: 50.0%
+----------------------------------------
+
+SUMMARY
+============================================================
+Total sequences analyzed: 5
+Highest GC: >gene4 (100.0%)
+Lowest GC:  >gene3 (31.25%)
