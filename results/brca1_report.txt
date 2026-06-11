@@ -1,0 +1,15 @@
+============================================================
+SEQUENCE ANALYSIS REPORT
+============================================================
+
+ID: >NM_007294.4 Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript variant 1, mRNA
+Length: 7088 bp
+GC Content: 41.77%
+AT Content: 58.23%
+----------------------------------------
+
+SUMMARY
+============================================================
+Total sequences analyzed: 1
+Highest GC: >NM_007294.4 Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript variant 1, mRNA (41.77%)
+Lowest GC:  >NM_007294.4 Homo sapiens BRCA1 DNA repair associated (BRCA1), transcript variant 1, mRNA (41.77%)
