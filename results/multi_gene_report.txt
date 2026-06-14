@@ -1,0 +1,40 @@
+======================================================================
+MULTI-GENE ANALYSIS REPORT
+Genes: TP53, BRCA1, KRAS
+======================================================================
+
+Gene: TP53
+----------------------------------------
+mRNA Length:        2512 bp
+GC Content:         53.38%
+AT Content:         46.62%
+Protein Length:     393 aa
+Molecular Weight:   43652.71 Da
+Isoelectric Point:  6.33
+Instability Index:  73.59
+Stability:          Unstable
+
+Gene: BRCA1
+----------------------------------------
+mRNA Length:        7088 bp
+GC Content:         41.77%
+AT Content:         58.23%
+Protein Length:     1863 aa
+Molecular Weight:   207718.53 Da
+Isoelectric Point:  5.29
+Instability Index:  54.67
+Stability:          Unstable
+
+Gene: KRAS
+----------------------------------------
+mRNA Length:        5306 bp
+GC Content:         36.28%
+AT Content:         63.72%
+Protein Length:     188 aa
+Molecular Weight:   21424.3 Da
+Isoelectric Point:  8.24
+Instability Index:  42.26
+Stability:          Unstable
+
+======================================================================
+END OF REPORT
