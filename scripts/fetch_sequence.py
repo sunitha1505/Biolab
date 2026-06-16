@@ -90,10 +90,11 @@ def main():
         sys.exit(1)
 
     gene = sys.argv[1].upper()
-    print(f"\nFetching {gene} from NCBI...")
+    organism = sys.argv[2] if len(sys.argv) >= 3 else "Homo sapiens"
+    print(f"\nFetching {gene} from NCBI ({organism})...")
     print("=" * 50)
 
-    ncbi_id = search_gene(gene)
+    ncbi_id = search_gene(gene, organism)
     if ncbi_id is None:
         sys.exit(1)
 
