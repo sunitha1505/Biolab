@@ -46,6 +46,21 @@ Side-by-side GC content comparison across multiple genes.
 ### 4. translate_genes.py
 Translates mRNA sequences to protein using GenBank CDS annotations.
 
+### 5. gene_pipeline.py
+Complete automated pipeline — fetch, analyze, and export.
+
+**Usage:**
+```bash
+python3 scripts/gene_pipeline.py TP53 BRCA1 KRAS EGFR
+```
+
+**Features:**
+- Fetches any genes automatically from NCBI
+- Calculates nucleotide and protein properties
+- Loads results into pandas DataFrame
+- Prints comparison table and statistics
+- Exports timestamped CSV and summary report
+
 ## Sample Results (multi_gene_analysis.py)
 
 | Gene  | mRNA Length | GC%   | Protein | MW (Da)    | pI   | Stability |
@@ -53,6 +68,13 @@ Translates mRNA sequences to protein using GenBank CDS annotations.
 | TP53  | 2512 bp     | 53.38 | 393 aa  | 43,652     | 6.33 | Unstable  |
 | BRCA1 | 7088 bp     | 41.77 | 1863 aa | 207,718    | 5.29 | Unstable  |
 | KRAS  | 5306 bp     | 36.28 | 188 aa  | 21,424     | 8.24 | Unstable  |
+
+| Gene  | mRNA  | GC%   | Protein | MW (kDa) | pI   | Stability |
+|-------|-------|-------|---------|----------|------|-----------|
+| TP53  | 2512  | 53.38 | 393 aa  | 43.7     | 6.33 | Unstable  |
+| BRCA1 | 7088  | 41.77 | 1863 aa | 207.7    | 5.29 | Unstable  |
+| KRAS  | 5306  | 36.28 | 188 aa  | 21.4     | 8.24 | Unstable  |
+| EGFR  | 9905  | 47.78 | 1210 aa | 134.3    | 6.26 | Unstable  |
 
 ## Requirements
 Python 3.x
