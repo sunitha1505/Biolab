@@ -63,12 +63,6 @@ python3 scripts/gene_pipeline.py TP53 BRCA1 KRAS EGFR
 
 ## Sample Results (multi_gene_analysis.py)
 
-| Gene  | mRNA Length | GC%   | Protein | MW (Da)    | pI   | Stability |
-|-------|-------------|-------|---------|------------|------|-----------|
-| TP53  | 2512 bp     | 53.38 | 393 aa  | 43,652     | 6.33 | Unstable  |
-| BRCA1 | 7088 bp     | 41.77 | 1863 aa | 207,718    | 5.29 | Unstable  |
-| KRAS  | 5306 bp     | 36.28 | 188 aa  | 21,424     | 8.24 | Unstable  |
-
 | Gene  | mRNA  | GC%   | Protein | MW (kDa) | pI   | Stability |
 |-------|-------|-------|---------|----------|------|-----------|
 | TP53  | 2512  | 53.38 | 393 aa  | 43.7     | 6.33 | Unstable  |
