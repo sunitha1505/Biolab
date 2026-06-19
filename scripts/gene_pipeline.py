@@ -1,5 +1,8 @@
 import sys
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')  # saves to file instead of trying to open a window
+import matplotlib.pyplot as plt
 from datetime import datetime
 
 sys.path.append("scripts")
@@ -94,5 +97,43 @@ def main():
         f.write(f"Most GC-rich: {df.loc[df['GC_percent'].idxmax(), 'Gene']}\n")
         f.write(f"Largest protein: {df.loc[df['Protein_aa'].idxmax(), 'Gene']}\n")
     print(f"Summary saved to: {txt_path}")
+
+    # Step 8: generate charts
+    chart_path = create_charts(df, timestamp)
+    print(f"Chart saved to: {chart_path}")
+
+def create_charts(df, timestamp):
+    fig, axes = plt.subplots(2, 2, figsize=(12, 8))
+    fig.suptitle("Gene Comparison Dashboard", fontsize=14, fontweight='bold')
+
+    # Chart 1: GC Content bar chart
+    axes[0,0].bar(df['Gene'], df['GC_percent'], color=['#2196F3','#4CAF50','#FF5722','#9C27B0'])
+    axes[0,0].set_title('GC Content (%)')
+    axes[0,0].set_ylabel('GC %')
+    axes[0,0].axhline(y=50, color='red', linestyle='--', alpha=0.5, label='50% line')
+    axes[0,0].legend()
+
+    # Chart 2: Protein size bar chart
+    axes[0,1].bar(df['Gene'], df['Protein_aa'], color=['#2196F3','#4CAF50','#FF5722','#9C27B0'])
+    axes[0,1].set_title('Protein Length (aa)')
+    axes[0,1].set_ylabel('Amino acids')
+
+    # Chart 3: Molecular weight
+    axes[1,0].bar(df['Gene'], df['MW_kDa'], color=['#2196F3','#4CAF50','#FF5722','#9C27B0'])
+    axes[1,0].set_title('Molecular Weight (kDa)')
+    axes[1,0].set_ylabel('kDa')
+
+    # Chart 4: pI values
+    axes[1,1].bar(df['Gene'], df['pI'], color=['#2196F3','#4CAF50','#FF5722','#9C27B0'])
+    axes[1,1].set_title('Isoelectric Point (pI)')
+    axes[1,1].set_ylabel('pI')
+    axes[1,1].axhline(y=7.2, color='red', linestyle='--', alpha=0.5, label='Cell pH 7.2')
+    axes[1,1].legend()
+
+    plt.tight_layout()
+    chart_path = f"results/gene_dashboard_{timestamp}.png"
+    plt.savefig(chart_path, dpi=150, bbox_inches='tight')
+    plt.close()
+    return chart_path
 
 main()
