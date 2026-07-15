@@ -1,0 +1,11 @@
+GENE PIPELINE REPORT
+Date: 2026-07-14 23:11
+Organism: Homo sapiens
+Genes: TP53, KRAS
+======================================================================
+Gene Accession  mRNA_Length  GC_percent  AT_percent  Protein_aa  MW_kDa   pI  Instability Stability
+TP53 NM_000546         2512       53.38       46.62         393    43.7 6.33        73.59  Unstable
+KRAS NM_004985         5306       36.28       63.72         188    21.4 8.24        42.26  Unstable
+
+Most GC-rich: TP53
+Largest protein: TP53
