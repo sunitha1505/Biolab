@@ -4,12 +4,12 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 results = {
-    "Compound":  ["Quercetin", "Gedunin", "Nimbin", "Nimbolide"],
-    "Affinity":  [-9.894, -5.27, -4.595, -4.40],
-    "MW":        [302.23, 482.6, 540.6, 466.5],
-    "LogP":      [1.5, 4.2, 2.3, 2.2],
-    "Lipinski":  ["PASS", "PASS", "PASS", "PASS"],
-    "Type":      ["Reference", "Neem", "Neem", "Neem"]
+    "Compound":  ["Celecoxib", "Quercetin", "Nimbolide", "Gedunin", "Nimbin"],
+    "Affinity":  [-12.12, -9.666, -7.726, -7.657, -6.751],
+    "MW":        [381.4, 302.23, 466.5, 482.6, 540.6],
+    "LogP":      [3.5, 1.5, 2.2, 4.2, 2.3],
+    "Lipinski":  ["PASS", "PASS", "PASS", "PASS", "PASS"],
+    "Type":      ["Drug", "Reference", "Neem", "Neem", "Neem"]
 }
 
 df = pd.DataFrame(results)
@@ -17,7 +17,7 @@ df = df.sort_values("Affinity")
 
 print("=" * 60)
 print("DOCKING RESULTS — Neem Phytochemicals vs COX-2")
-print("Target: Human COX-2 (PDB: 5F19)")
+print("Target: Mouse COX-2 (PDB: 3LN1, celecoxib-bound)")
 print("Method: AutoDock Vina 1.2.7")
 print("=" * 60)
 print(df.to_string(index=False))
