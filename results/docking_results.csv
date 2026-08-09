@@ -1,6 +1,6 @@
-Compound,Affinity,MW,LogP,Lipinski,Type
-Celecoxib,-12.12,381.4,3.5,PASS,Drug
-Quercetin,-9.666,302.23,1.5,PASS,Reference
-Nimbolide,-7.726,466.5,2.2,PASS,Neem
-Gedunin,-7.657,482.6,4.2,PASS,Neem
-Nimbin,-6.751,540.6,2.3,PASS,Neem
+Compound,Affinity,MW,LogP,TPSA,GI_Abs,BBB,Pgp,PAINS,Lipinski,Type
+Celecoxib,-12.12,381.4,3.32,86.36,High,No,No,0,PASS,Drug
+Quercetin,-9.666,302.23,0.79,131.36,High,No,No,1,PASS,Reference
+Nimbolide,-7.726,466.5,3.0,92.04,High,No,No,0,PASS,Neem
+Gedunin,-7.657,482.6,3.86,95.34,High,No,Yes,0,PASS,Neem
+Nimbin,-6.751,540.6,3.05,118.34,High,No,No,0,PASS,Neem

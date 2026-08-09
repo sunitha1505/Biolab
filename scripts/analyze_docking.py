@@ -4,12 +4,17 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 results = {
-    "Compound":  ["Celecoxib", "Quercetin", "Nimbolide", "Gedunin", "Nimbin"],
-    "Affinity":  [-12.12, -9.666, -7.726, -7.657, -6.751],
-    "MW":        [381.4, 302.23, 466.5, 482.6, 540.6],
-    "LogP":      [3.5, 1.5, 2.2, 4.2, 2.3],
-    "Lipinski":  ["PASS", "PASS", "PASS", "PASS", "PASS"],
-    "Type":      ["Drug", "Reference", "Neem", "Neem", "Neem"]
+    "Compound":     ["Celecoxib", "Quercetin", "Nimbolide", "Gedunin", "Nimbin"],
+    "Affinity":     [-12.12, -9.666, -7.726, -7.657, -6.751],
+    "MW":           [381.4, 302.23, 466.5, 482.6, 540.6],
+    "LogP":         [3.32, 0.79, 3.00, 3.86, 3.05],
+    "TPSA":         [86.36, 131.36, 92.04, 95.34, 118.34],
+    "GI_Abs":       ["High", "High", "High", "High", "High"],
+    "BBB":          ["No", "No", "No", "No", "No"],
+    "Pgp":          ["No", "No", "No", "Yes", "No"],
+    "PAINS":        [0, 1, 0, 0, 0],
+    "Lipinski":     ["PASS", "PASS", "PASS", "PASS", "PASS"],
+    "Type":         ["Drug", "Reference", "Neem", "Neem", "Neem"]
 }
 
 df = pd.DataFrame(results)
